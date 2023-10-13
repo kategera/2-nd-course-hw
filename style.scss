@@ -19,7 +19,7 @@ $color:  #9C0332;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    &__title{
+        &__title{
         color: #FFF;
         font-family: Montserrat;
         font-size: 64px;
@@ -51,17 +51,56 @@ $color:  #9C0332;
     &__textlink:hover {
         color: $color; 
         }
+    &__buttonbox{
+        display: flex;
+        }
     &__button{
         width: 234.063px;
         height: 48.603px;
         flex-shrink: 0;
         border-radius: 30px;
         background: $color;
+        padding: 13px 74px 13px 74px;
+        box-sizing: border-box;
         color: #FFF;
         font-family: Montserrat;
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        transition: transform 0.7s;
+        }
+    &__button:hover {
+        transform: scale(1.1);
         }
     }
+  .game {
+    height: 556px;
+    background: #000915;
+      &__box {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: $gap;
+      padding-top: 128px;
+    }
+    &__item {
+      position: relative;
+      transition: transform 0.7s;
+    }
+    &__item:hover {
+      transform: scale(1.1);
+      }
+    &__name {
+      position: absolute;
+      left: $gap;
+      bottom: $gap;
+      color: #FFF;
+      font-family: Montserrat;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 32px; 
+    }
+    }
+    
+  

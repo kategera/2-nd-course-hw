@@ -51,16 +51,54 @@ a {
 .top__textlink:hover {
   color: #9C0332;
 }
+.top__buttonbox {
+  display: flex;
+}
 .top__button {
   width: 234.063px;
   height: 48.603px;
   flex-shrink: 0;
   border-radius: 30px;
   background: #9C0332;
+  padding: 13px 74px 13px 74px;
+  box-sizing: border-box;
   color: #FFF;
   font-family: Montserrat;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  transition: transform 0.7s;
+}
+.top__button:hover {
+  transform: scale(1.1);
+}
+
+.game {
+  height: 556px;
+  background: #000915;
+}
+.game__box {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 32px;
+  padding-top: 128px;
+}
+.game__item {
+  position: relative;
+  transition: transform 0.7s;
+}
+.game__item:hover {
+  transform: scale(1.1);
+}
+.game__name {
+  position: absolute;
+  left: 32px;
+  bottom: 32px;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
 }/*# sourceMappingURL=style.css.map */
