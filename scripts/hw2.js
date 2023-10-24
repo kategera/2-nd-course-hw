@@ -5,11 +5,11 @@ a = 20;
 alert(a);
 
 //Задание 2
-let firstIphone = 2007;
+const firstIphone = 2007;
 alert("Год выпуска первого Айфона - " + firstIphone);
 
 //Задание 3
-let creatorJS = "Брендан Эйх";
+const creatorJS = "Брендан Эйх";
 alert("JS создал " + creatorJS);
 
 //Задание 4
