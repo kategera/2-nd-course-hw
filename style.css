@@ -69,6 +69,7 @@ a {
   font-weight: 400;
   line-height: normal;
   transition: transform 0.7s;
+  cursor: u, auto;
 }
 .top__button:hover {
   transform: scale(1.1);
