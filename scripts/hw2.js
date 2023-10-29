@@ -56,6 +56,7 @@ user['city of residence'] = "Богородицк";
 
 //Задание 9.2
 user['age'] = 8;
+//user.age = 8;
 
 //Задание 9.3
 delete user['city of residence'];
@@ -67,3 +68,4 @@ alert(user[info]);
 //Задание 10
 let clientName = prompt("Добрый день! Как ваше имя?");
 alert("Привет, " + clientName +" !");
+//alert(`Привет, ${clientName} !`);
