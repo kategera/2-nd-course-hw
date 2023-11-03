@@ -1,7 +1,7 @@
 //Задание 1
 let password = '12tri45';
 let userpass = prompt("Введите пароль");
-if (password === userpass) {//
+if (password === userpass) {
     alert("Пароль введен верно")
 } else {
     alert("Пароль введен неправильно")
