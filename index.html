@@ -17,14 +17,14 @@
     </h1>
     <p class="top__text">
         Вам предстоит пройти несколько увлекательных игр. Если готов нажимай 
-        <a class="top__textlink" href="#">поехали</a> и <a class="top__textlink" href="#">приступай</a>
+        <a class="top__textlink" href="#start">поехали</a> и <a class="top__textlink" href="#start">приступай</a>
     </p>
     <div class="top__buttonbox">
         <a class="top__button" href="#start">Поехали!</a>
     </div>
    </div>
    <div class="game center">
-    <div id="start" class="game__box">
+    <div class="game__box">
        <div class="game__item">
         <a href="#"><img class="game__img" src="img/game1.png" alt="Игра 1">
             <div class="game__name">Игра 1</div>
@@ -42,16 +42,16 @@
        </div>
     </div>
     </div>
-    <div class="seasons center">
+    <div id="start" class="seasons center">
         <div class="seasons__main">
             <h1 class="seasons__title">Времена года!</h1>
             <p class="seasons__text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
-            <!-- <button class="top__button">Играть!</button> -->
-            <a onclick="showSeasons" class="top__button" href="#">Играть!</a>
+            <a onclick="showSeasons();" class="top__button" href>Играть!</a>
         </div>
         <div>
             <img class="seasons__img" src="img/seasons.png" alt="Игра времена года">   
         </div>
     </div>
+    <script src="seasons.js"></script>
 </body>
 </html>
