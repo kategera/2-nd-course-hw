@@ -134,10 +134,6 @@ let Seconds = todayDate.getSeconds();
 return `Дата:  ${date}  ${month}  ${year} - это ${day}.
 Время: ${hour}:${Minutes}:${Seconds}`;
 
-
-
-
-
 }
 
 console.log(ruDate(new Date()));
