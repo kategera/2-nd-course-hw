@@ -54,17 +54,17 @@
      }
     .seasons {
         height: 654px;
-        padding-top: 51px;
         padding-left: 16px;
         padding-right: 16px;
         flex-direction: column;
         gap: 64px;
+        box-sizing: border-box;
         &__main {
             align-items: center;
             padding-bottom: 0;
         }
         &__title {
-            text-align: center;
+           text-align: center;
             font-size: 32px;
             font-style: normal;
             font-weight: 700;
@@ -83,5 +83,10 @@
            height: 236px;
            
         }
+    }
+    .words {
+        flex-direction: column-reverse;
+        padding-bottom: 90px;
+        
     }
 }

@@ -189,11 +189,11 @@ a {
   }
   .seasons {
     height: 654px;
-    padding-top: 51px;
     padding-left: 16px;
     padding-right: 16px;
     flex-direction: column;
     gap: 64px;
+    box-sizing: border-box;
   }
   .seasons__main {
     align-items: center;
@@ -216,5 +216,9 @@ a {
   .seasons__img {
     width: 344px;
     height: 236px;
+  }
+  .words {
+    flex-direction: column-reverse;
+    padding-bottom: 90px;
   }
 }/*# sourceMappingURL=style.css.map */

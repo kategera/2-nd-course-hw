@@ -19,8 +19,11 @@ console.log (joinNumbs.join(' '));
 //Задание 4
 
 const array = [];
-for(let i = 0; i <= 2; i++) {
-    array.push([1, 1, 1]);
+for (let i = 0; i <= 2; i++) {
+    array[i] = [];
+    for (let j = 0; j <= 2; j++) {
+        array[i][j] = 1;
+    }
 }
 console.log(array);
 
@@ -43,15 +46,6 @@ const sortNumbs = [9, 8, 7, 'a', 6, 5];
 sortNumbs.sort().pop();
 
 console.log(sortNumbs);
-
-// // Дарья, почему так работает не корректно?
-// for ( i = 0; i < sortNumbs.length; i++)
-// {
-//    if (isNaN(sortNumbs[i]));
-//    {
-//     sortNumbs.pop(i);
-//   }
-//  }
 
 
 //Задание 7
@@ -133,24 +127,46 @@ let arrNegativ = arrAny.filter(item => item < 0);
 
 console.log(arrNegativ);
 
-
-// Дарья, не пойму, как мне не пушить нулевые значения
-// let arrNegativ =[];
-
-// function filterNegative(a) {
-//     if (a < 0) {
-//         return a;
-//     } else {
-//         return 0;
-//     }
-// };
-    
-
-// for(let i = 0; i <= arrAny.length-1; i++) {
-//     arrNegativ.push(filterNegative(arrAny[i]));
-// }
-
-// console.log(arrNegativ);
-
-
 //Задание 14
+
+let arr14 = [];
+
+for (let i = 0; i < 10; i++) {
+    arr14.push(Math.round(Math.random() * 10))
+}
+
+console.log(arr14);
+
+let arr14Even = [];
+
+for(let i = 0; i < arr14.length-1; i++) {
+
+    if (arr14[i] % 2 === 0) {
+
+        arr14Even.push(arr14[i]);
+
+    }
+}
+console.log(arr14Even);
+
+
+//Задание 15
+
+let arr15 = [];
+
+for (let i = 0; i < 6; i++) {
+    arr15.push(Math.round(Math.random() * 10))
+}
+
+console.log(arr15);
+
+let sum = 0;
+let average = 0;
+
+for (let i = 0; i < arr15.length - 1; i++) {
+    sum += arr15[i];
+}
+
+average = sum / arr15.length;
+
+console.log(average);
